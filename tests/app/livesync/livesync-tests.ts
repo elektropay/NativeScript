@@ -159,7 +159,7 @@ function _test_onLiveSync_ModuleReplace_Multiple(context: { type: string, path: 
     context.forEach(item => {
         global.__onLiveSync(item);
     });
-    
+
     const topmostFrame = frame.topmost();
     waitUntilLivesyncComplete(topmostFrame);
     TKUnit.assertTrue(topmostFrame.currentPage.getViewById("button").isLoaded, "Button page is NOT loaded!");
