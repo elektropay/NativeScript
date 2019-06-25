@@ -1,5 +1,8 @@
 ﻿import { Observable as ObservableDefinition, WrappedValue as WrappedValueDefinition, EventData, PropertyChangeData } from ".";
 
+// Export interfaces from definitions to satisfy linked modules builds
+export { EventData, PropertyChangeData };
+
 interface ListenerEntry {
     callback: (data: EventData) => void;
     thisArg: any;

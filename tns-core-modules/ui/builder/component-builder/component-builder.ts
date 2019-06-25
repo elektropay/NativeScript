@@ -1,6 +1,9 @@
-﻿// Deifinitions.
+﻿// Definitions.
 import { ComponentModule } from ".";
 import { View } from "../../core/view";
+
+// Export interfaces from definitions to satisfy linked modules builds
+export { ComponentModule };
 
 // Types.
 import { isEventOrGesture } from "../../core/bindable";
